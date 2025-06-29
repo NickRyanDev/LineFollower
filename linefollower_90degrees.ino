@@ -12,9 +12,9 @@
 bool sensorRightRead = false;
 bool sensorLeftRead = false;
 
-const int speed = 200;
-const int maxSpeed = 235;
-const int lowSpeed = 135;
+const int speed = 185;
+const int maxSpeed = 210;
+const int lowSpeed = 120;
 const int stopped = 0;
 
 
