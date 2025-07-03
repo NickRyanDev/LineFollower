@@ -12,9 +12,9 @@
 bool sensorRightRead = false;
 bool sensorLeftRead = false;
 
-const int speed = 185;
-const int maxSpeed = 210;
-const int lowSpeed = 120;
+const int speed = 187;
+const int maxSpeed = 212;
+const int lowSpeed = 125;
 const int stopped = 0;
 
 
@@ -53,8 +53,8 @@ void loop() {
     analogWrite(rightB, speed);
   }
  if((sensorLeftRead == LOW) && (sensorRightRead == LOW)){
-    analogWrite(leftF, stopped);
-    analogWrite(rightF, stopped);
+    analogWrite(leftF, lowSpeed);
+    analogWrite(rightF, lowSpeed);
     analogWrite(leftB, stopped);
     analogWrite(rightB, stopped);
   }
